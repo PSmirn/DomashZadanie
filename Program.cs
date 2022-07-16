@@ -67,4 +67,40 @@ void Upr4()
     Console.Write("\b.");
     Console.WriteLine();
 }
-    Upr4();
+    
+void Upr5()
+{
+    Console.Write("Введите число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (number <= 99)
+    {
+        Console.Write("третьей цифры нет");
+    }
+    else
+    {
+        while (number>999)
+        {
+            number /=10;
+        }
+        Console.Write(number%10);
+    }
+
+}    
+
+void Upr6()
+{
+    Console.Write("Введите число от 1 до 7: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (number == 6 || number == 7)
+    {
+        Console.Write("Выходной");
+    }
+    else
+    {
+        Console.Write("Невыходной");
+    }
+}
+
+
+
+Upr5();
